@@ -34,15 +34,24 @@ import { CombineDispatchToProps, CombineStateToProps } from '@plugins/helperJS';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-const theme = createTheme();
+const theme = createTheme(); // tạo theme trong library material ui
 
 const Login = (props) => {
-  const intl = useIntl();
+  const intl = useIntl(); // đây là custome hook, library quản lý định dạng ngôn ngữ, dịch chuỗi
   const isRendered = useRef(false);
+//Trong React, hook useRef được sử dụng để lưu trữ các giá trị thay đổi mà không gây ra việc render lại component khi giá trị thay đổi. 
+// Khi bạn khởi tạo một biến bằng useRef(initialValue), giá trị ban đầu của biến sẽ được lưu trữ trong current property của đối tượng trả về từ hook useRef.
 
+// Trong trường hợp này, isRendered là một biến được tạo ra thông qua useRef và được khởi tạo với giá trị ban đầu là false. Biến này có thể 
+// được sử dụng để theo dõi trạng thái của việc render của một component trong React.
+
+// Khi bạn cần cập nhật giá trị của isRendered mà không gây ra việc render lại component, bạn có thể thay đổi giá trị thông qua isRendered.current.
   const { history, changeLanguage, language, HistoryElementTabs } = props;
+//const { history, changeLanguage, language, HistoryElementTabs } = props;: Dòng này đang sử dụng destructuring assignment để trích xuất các thuộc tính 
+// history, changeLanguage, language, và HistoryElementTabs từ props của component. Điều này giúp bạn truy cập các giá trị này dễ dàng hơn trong phần còn lại của component.
   const { dispatchSetLanguage } = useLanguageStore((state) => state);
-
+//const { dispatchSetLanguage } = useLanguageStore((state) => state);: Dòng này có vẻ như đang sử dụng một custom hook có tên là useLanguageStore để lấy ra 
+// dispatchSetLanguage từ state của custom hook đó. Điều này cho phép bạn gửi các action để cập nhật trạng thái của ngôn ngữ trong ứng dụng của mình.
   const countries = [
     {
       code: 'EN',
@@ -53,48 +62,55 @@ const Login = (props) => {
       title: 'Tiếng Việt',
     },
   ];
+//const countries = [...]: Dòng này đang khai báo một mảng countries chứa thông tin về các quốc gia và ngôn ngữ tương ứng. Mỗi phần tử trong mảng 
+// đều chứa hai thuộc tính là code (mã ngôn ngữ) và title (tiêu đề ngôn ngữ).
 
   //// useTokenStore
   const dispatchSetAccessToken = useTokenStore((state) => state.dispatchSetAccessToken);
+//const dispatchSetAccessToken = useTokenStore((state) => state.dispatchSetAccessToken);: Dòng này đang sử dụng custom hook useTokenStore để lấy hàm 
+// dispatchSetAccessToken từ trạng thái của hook đó. Có vẻ như hàm này được sử dụng để cập nhật access token trong ứng dụng của bạn.
   const dispatchSetRefreshToken = useTokenStore((state) => state.dispatchSetRefreshToken);
-
+//const dispatchSetRefreshToken = useTokenStore((state) => state.dispatchSetRefreshToken);: Tương tự như trên, dòng này cũng sử dụng custom hook useTokenStore 
+// để lấy hàm dispatchSetRefreshToken từ trạng thái của hook đó. Hàm này có thể được sử dụng để cập nhật refresh token trong ứng dụng của bạn.
   //// useUserStore
   const dispatchSetUser = useUserStore((state) => state.dispatchSetUser);
-
+//Dòng này dùng để lấy hàm dispatchSetUser từ trạng thái của custom hook useUserStore. Có thể đây là hàm được sử dụng để cập nhật thông tin người dùng trong ứng dụng của bạn.
   //// useMenuStore
   const dispatchSetMenu = useMenuStore((state) => state.dispatchSetMenu);
+//Dòng này sử dụng custom hook useMenuStore để lấy hàm dispatchSetMenu từ trạng thái của hook đó. Hàm này có thể được sử dụng để cập nhật menu trong giao diện của ứng dụng.
   const dispatchSetMenuHtml = useMenuStore((state) => state.dispatchSetMenuHtml);
-
+//dòng này cũng dùng custom hook useMenuStore để lấy hàm dispatchSetMenuHtml từ trạng thái của hook đó. Hàm này có thể được sử dụng để cập nhật phần tử HTML cho menu trong giao diện
   const [errorMessages, setErrorMessages] = useState(null);
-
+//Đoạn này khởi tạo một state errorMessages và hàm setErrorMessages bằng cách sử dụng hook useState. State này có thể được sử dụng để lưu trữ và hiển thị thông báo lỗi trong ứng dụng
   const initModal = {
     userName: '',
     userPassword: '',
     // userPassword: '1234@',
   };
+//Đoạn này khởi tạo một đối tượng initModal với hai thuộc tính userName và userPassword. Có thể đây là dùng để lưu trữ thông tin mặc định cho một modal trong ứng dụng
   // const { values, setValues, handleInputChange } = useFormCustom(initModal);
 
   const [buttonState, setButtonState] = useState('loaded');
-
+//Đây khởi tạo một state buttonState với giá trị ban đầu là 'loaded', và hàm setButtonState để cập nhật giá trị của state này. State này có thể được sử dụng để quản lý trạng thái của nút trong ứng dụng
   const [defaultLang, setDefaultLang] = useState({
     code: 'EN',
     title: 'English',
   });
-
+//Đây khởi tạo một state defaultLang với một đối tượng có hai thuộc tính code và title. State này có thể được sử dụng để lưu trữ ngôn ngữ mặc định trong ứng dụng.
   const [isSubmit, setIsSubmit] = useState(false);
-
+//Đây khởi tạo một state isSubmit với giá trị ban đầu là false, và hàm setIsSubmit để cập nhật giá trị của state này. State này có thể được sử dụng để đánh dấu việc submit form trong ứng dụng
   const [showPassword, setShowPassword] = useState(false);
-
+//Đây khởi tạo một state showPassword với giá trị ban đầu là false, và hàm setShowPassword để cập nhật giá trị của state này. State này có thể được sử dụng để hiển thị hoặc ẩn mật khẩu trong form.
   const handleClickShowPassword = () => {
     setShowPassword(() => {
       return !showPassword;
     });
   };
-
+//Đây là hàm xử lý sự kiện khi người dùng click vào nút hiển thị/ẩn mật khẩu. Hàm này cập nhật trạng thái showPassword để hiển thị hoặc ẩn mật khẩu.
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
-
+//Đây là hàm xử lý sự kiện khi người dùng nhấn chuột vào mật khẩu. Hàm này ngăn chặn hành động mặc định của sự kiện.
   
 
   const schema = yup.object().shape({
@@ -103,7 +119,7 @@ const Login = (props) => {
 
     
   });
-
+//Đoạn này sử dụng thư viện Yup để định nghĩa schema cho việc kiểm tra dữ liệu nhập vào. Schema này yêu cầu các trường userName và userPassword phải được nhập và không được để trống
   const {
     register,
     formState: { errors },
