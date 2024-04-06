@@ -1,8 +1,8 @@
-
+import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { resetStores, useUserStore } from '@stores';
 
-
+const firstLogin = {};
 const isAuthenticate = () => {
     let isAuthen = false;
     const currentUser = useUserStore.getState().user;
@@ -83,9 +83,10 @@ const logOut = () => {
   resetStores.resetAllStores();
 };
 export {
-  
+  firstLogin,
   isAuthenticate,
   AuthenticateRoute,
   NotAuthenticateRoute,
+  logOut,
   LogoutRoute,
 };

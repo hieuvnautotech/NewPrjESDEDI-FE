@@ -138,7 +138,8 @@ export default App;
 // thay thế thay vì gây ra sự cố trên toàn ứng dụng.
 
 // Các Route Wrapper Components: Có ba components RouteWrapperLogin, RouteWrapperRoot, và RouteWrapperLogout, mỗi component này là một hàm arrow function nhận props và render một 
-// component khác dựa trên logic nhất định. Cụ thể, RouteWrapperLogin render một component Login với điều kiện chưa xác thực, RouteWrapperRoot render một component Dashboard với điều kiện đã xác thực, và RouteWrapperLogout render một component trống (một cách để xử lý việc đăng xuất).
+// component khác dựa trên logic nhất định. Cụ thể, RouteWrapperLogin render một component Login với điều kiện chưa xác thực, RouteWrapperRoot render một component Dashboard với 
+// điều kiện đã xác thực, và RouteWrapperLogout render một component trống (một cách để xử lý việc đăng xuất).
 
 // Component App: Đây là component chính của ứng dụng. Nó sử dụng React hooks useState và useEffect để quản lý trạng thái và các tác động phụ. Trong nội dung của nó, nó sử dụng 
 // ErrorBoundary để bao bọc toàn bộ ứng dụng và sử dụng CustomRouter, Switch, và các Route components từ react-router-dom để xác định routing của ứng dụng dựa trên các đường dẫn

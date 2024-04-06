@@ -7,7 +7,7 @@ import { lazy } from 'react';
 // import TabListContent from './dashBoard/TabListContent';
 
 // const DashBoard = lazy(() => import('./dashBoard'));
-// const Login = lazy(() => import('./login/Login'));
+const Login = lazy(() => import('./login/Login'));
 // const NavBar = lazy(() => import('./dashBoard/NavBar'));
 // const ChangeLanguage = lazy(() => import('./dashBoard/ChangeLanguage'));
 // const TabListContent = lazy(() => import('./dashBoard/TabListContent'));
