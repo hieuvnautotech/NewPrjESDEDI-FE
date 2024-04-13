@@ -148,20 +148,26 @@ const App = (props) => {
 };
 
 export default App;
-//Đoạn mã trên là một component React có tên là App. Component này là một phần chính của ứng dụng React và được sử dụng để render ra giao diện người dùng và quản lý các thành phần khác trong ứng dụng.
+//Đoạn mã trên là một component React có tên là App. Component này là một phần chính của ứng dụng React và được sử dụng để render ra giao diện người dùng và quản lý các thành phần khác 
+//trong ứng dụng.
 
 // Dưới đây là mô tả các phần chính của component App:
 
 // Khởi tạo OneSignal: Dòng mã window.OneSignal = window.OneSignal || []; được sử dụng để đảm bảo rằng biến OneSignal đã được khởi tạo.
 
-// Khởi tạo State: Component sử dụng Hook useState để khởi tạo state bootstrapped và isOnline, lần lượt là trạng thái của quá trình khởi tạo ứng dụng và trạng thái kết nối mạng của người dùng.
+// Khởi tạo State: Component sử dụng Hook useState để khởi tạo state bootstrapped và isOnline, lần lượt là trạng thái của quá trình khởi tạo ứng dụng và trạng thái kết nối mạng của 
+//người dùng.
 
-// Xử lý khởi tạo persistor: Hàm handlePersistorState được sử dụng để xử lý trạng thái của persistor (cơ chế lưu trữ) và đảm bảo rằng ứng dụng đã được khởi tạo hoàn toàn trước khi hiển thị giao diện.
+// Xử lý khởi tạo persistor: Hàm handlePersistorState được sử dụng để xử lý trạng thái của persistor (cơ chế lưu trữ) và đảm bảo rằng ứng dụng đã được khởi tạo hoàn toàn trước khi 
+//hiển thị giao diện.
 
-// Effect Hooks: Sử dụng Hook useEffect để thực hiện các tác vụ phụ thuộc vào trạng thái hoặc vòng đời của component. Cụ thể, sử dụng để theo dõi trạng thái kết nối mạng của người dùng và xử lý các sự kiện online và offline.
+// Effect Hooks: Sử dụng Hook useEffect để thực hiện các tác vụ phụ thuộc vào trạng thái hoặc vòng đời của component. Cụ thể, sử dụng để theo dõi trạng thái kết nối mạng của người 
+//dùng và xử lý các sự kiện online và offline.
 
-// Render: Trong phần render, component App render ra một fragment chứa một ErrorBoundary và một CustomRouter (một thành phần tùy chỉnh của Router), trong đó ErrorBoundary được sử dụng để bắt lỗi và CustomRouter 
-// là nơi quản lý các route của ứng dụng. Các route được định nghĩa thông qua các thành phần Route với các đường dẫn khác nhau và được bao bọc trong các components RouteWrapperLogin, RouteWrapperLogout, và RouteWrapperRoot.
+// Render: Trong phần render, component App render ra một fragment chứa một ErrorBoundary và một CustomRouter (một thành phần tùy chỉnh của Router), trong đó ErrorBoundary được sử 
+//dụng để bắt lỗi và CustomRouter 
+// là nơi quản lý các route của ứng dụng. Các route được định nghĩa thông qua các thành phần Route với các đường dẫn khác nhau và được bao bọc trong các components RouteWrapperLogin, 
+//RouteWrapperLogout, và RouteWrapperRoot.
 
 // const LOGIN_URL = 'http://localhost:5141/api/Login/check-login'
 //Tóm lại

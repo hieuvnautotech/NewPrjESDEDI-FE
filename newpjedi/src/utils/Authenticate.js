@@ -72,7 +72,18 @@ const NotAuthenticateRoute = (Component, route) => (props) => {
   }
   return <Component {...props} />;
 };
+//Hàm này nhận vào hai đối số: Component và route.
 
+// Component: Là một thành phần React (hoặc một hàm trả về JSX) mà bạn muốn bảo vệ. Nếu người dùng chưa xác thực (không đăng nhập), Component sẽ được hiển thị; nếu không, 
+// người dùng sẽ được chuyển hướng đến đường dẫn được xác định hoặc trang chính ('/').
+// route: Đường dẫn mà người dùng sẽ được chuyển hướng đến nếu họ không xác thực. Mặc định, nếu không có đường dẫn được chỉ định, người dùng sẽ được chuyển hướng đến trang chính.
+// Nó hoạt động như sau:
+
+// Hàm isAuthenticate() được gọi để kiểm tra xem người dùng đã xác thực hay chưa.
+// Nếu người dùng đã xác thực, họ sẽ được chuyển hướng đến đường dẫn được xác định (hoặc trang chính).
+// Nếu Component được truyền vào là null, hàm sẽ trả về null.
+// Nếu người dùng chưa xác thực và Component không phải là null, Component sẽ được hiển thị với các props được truyền vào.
+// Đoạn mã này có thể được sử dụng để bảo vệ các tuyến đường trong ứng dụng React, đảm bảo rằng chỉ có người dùng đã xác thực mới có thể truy cập vào những tuyến đường được bảo vệ
 
 
 const LogoutRoute = () => (props) => {
@@ -82,6 +93,14 @@ const LogoutRoute = () => (props) => {
 const logOut = () => {
   resetStores.resetAllStores();
 };
+//Đoạn mã này là một hàm cao cấp trong React được gọi là LogoutRoute. Hàm này không nhận bất kỳ đối số nào và trả về một hàm khác.
+
+// Hàm được trả về nhận vào props (có thể là các props được chuyển đến từ React Router, chẳng hạn như history), nhưng trong trường hợp này không sử dụng props.
+// Đầu tiên, hàm này gọi hàm logOut() để đăng xuất người dùng.
+// Sau đó, nó sử dụng <Redirect> từ react-router-dom để chuyển hướng người dùng đến trang chính (được định nghĩa là '/ ').
+// Hàm logOut() là một hàm độc lập mà bạn định nghĩa bên dưới. Nó chỉ gọi hàm resetAllStores() từ một đối tượng resetStores.
+
+// Tóm lại, LogoutRoute được sử dụng để xử lý việc đăng xuất người dùng trong ứng dụng React và chuyển hướng họ đến trang chính sau khi họ đăng xuất.
 export {
   firstLogin,
   isAuthenticate,
