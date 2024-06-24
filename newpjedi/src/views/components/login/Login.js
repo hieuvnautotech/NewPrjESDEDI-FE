@@ -130,7 +130,7 @@ const Login = (props) => {
     resolver: yupResolver(schema),
     defaultValues: { ...initModal },
   });
-//Mã này là một ví dụ về việc sử dụng destructuring trong JavaScript ES6 để trích xuất các phần tử từ một đối tượng được trả về từ hàm useForm.
+//Mã này là một ví dụ về việc sử dụng destructuring(phá hủy) trong JavaScript ES6 để trích xuất các phần tử từ một đối tượng được trả về từ hàm useForm.
 // useForm là một hook của thư viện React Hook Form, được sử dụng để quản lý biểu mẫu trong ứng dụng React.
 // const { register, formState: { errors }, handleSubmit, clearErrors } là cách trích xuất các thành phần cụ thể từ đối tượng được trả về bởi useForm.
 // register, handleSubmit, và clearErrors là các phương thức cung cấp bởi useForm để đăng ký các trường nhập, xử lý gửi biểu mẫu và xóa lỗi tương ứng.
