@@ -14,7 +14,7 @@ import { Provider } from 'react-redux';
 // Thường thì, bạn sẽ sử dụng Provider ở cấp cao nhất của ứng dụng React, ví dụ như trong file index.js hoặc App.js, để đảm bảo rằng Redux store sẽ 
 // được cung cấp cho toàn bộ ứng dụng.
 import { I18nextProvider } from 'react-i18next';
-import IntlProviderWrapper from '../src/views/containers/hoc/IntlProviderWrapper';
+import IntlProviderWrapper from './hoc/IntlProviderWrapper';
 
 import 'font-awesome/css/font-awesome.min.css';
 import i18n from './i18n';

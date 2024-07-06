@@ -1,0 +1,33 @@
+// jsconfig.json
+
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      //Assuming your components/utilities live in ./src
+      //Update this path as necessary
+      "@static/*": ["./static/*"],
+      "@plugins/*": ["./src/plugins/*"],
+      "@views": ["./src/views"],
+      "@states": ["./src/states"],
+      "@appstate/*": ["./src/states/app/*"],
+      "@utils": ["./src/utils"],
+      "@constants": ["./src/constants/"],
+      "@duck/*": ["./src/state/duck/*"],
+      "@viewCommons/*": ["./src/views/common/*"],
+      "@containers/*": ["./src/views/containers/*"],
+      "@components": ["./src/views/components"],
+      "@styles/*": ["./src/styles/*"],
+      "@basesShared/*": ["./src/bases/shared/*"],
+      "@basesActions/*": ["./src/bases/actions/*"],
+      "@services": ["./src/services"],
+      "@hooks": ["./src/hooks"],
+      "@controls": ["./src/bases/controls"],
+      "@models": ["./src/models"],
+      "@stores": ["./src/store"],
+      "@node_modules/*": ["../node_modules/*"]
+    }
+  },
+  //Add any build/compiled folders here to stop vscode searching those
+  "exclude": ["node_modules", "build", "publish"]
+}
