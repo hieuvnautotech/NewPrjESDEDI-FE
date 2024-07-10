@@ -1,0 +1,347 @@
+{
+  "general": {
+    "signin": "Đăng nhập",
+    "select_language": "Chọn ngôn ngữ",
+    "warning": "Cảnh báo",
+    "create": "Tạo",
+    "modify": "Chỉnh sửa",
+    "print": "In",
+    "changepassword": "Đổi mật khẩu",
+    "success": "Thành công",
+    "no_data": "Không có dữ liệu",
+    "account_is_logged_in_some_where": "Tài khoản đã được đăng nhập nơi khác",
+    "roles_had_been_changed": "Vai trò của bạn đã được thay đổi. Vui lòng đăng nhập lại để tiếp tục phiên làm việc",
+    "object_invalid": "Mẫu không hợp lệ",
+    "change_password_not_allowed": "Không được phép thay đổi mật khẩu của tài khoản này",
+    "refresh_required": "Dữ liệu đã thay đổi, làm mới trang để cập nhật thông tin mới nhất",
+    "confirm_create": "Xác nhận tạo mới",
+    "confirm_modify": "Xác nhận chỉnh sửa",
+    "confirm_delete": "Xác nhận xóa dữ liệu",
+    "rootOnly": "Root only",
+    "forApp": "Hiển thị trên App",
+    "unauthorized": "Bạn không có quyền truy cập chức năng hiện tại",
+    "field_required": "Không được để trống",
+    "field_min": "Giá trị phải lớn hơn hoặc bằng {min}",
+    "field_max": "Giá trị phải nhỏ hơn hoặc bằng {max}",
+    "confirm_redo_deleted": "Xác nhận để quay lại dữ liệu đã xóa",
+    "createdName": "Người tạo",
+    "createdDate": "Ngày tạo",
+    "modifiedName": "Người sửa",
+    "modifiedDate": "Ngày sửa",
+    "duplicated_code": "Trùng mã",
+    "duplicated_name": "Trùng tên",
+    "data_actived": "Actived data",
+    "data_deleted": "Deleted data",
+    "week_invalid": "Tuần phải là số nguyên dương trong khoảng 1 - 52",
+    "year_invalid": "Năm phải là số nguyên dương trong khoảng 2022 - 2050",
+    "datetime_format_invalid": "Format ngày giờ không hợp lệ",
+    "qty_notEnough": "Số lượng không đủ",
+    "excel_error": "Lỗi file Excel: [{error}]",
+    "field_max_length": "Độ dài tối đa là {length} ký tự",
+    "date_search_is_not_valid": "Từ ngày phải nhỏ hơn hoặc bằng Đến ngày",
+    "modified_date": "Ngày sửa",
+    "created_date": "Ngày tạo",
+    "choose_printer": "Chọn máy in",
+    "not_select_printer": "Bạn chưa chọn máy in ấn",
+    "not_select_file": "'Chưa chọn file update",
+    "cannot_connect_printer": "Không thể kết nối máy in",
+    "not_found": "Không tìm thấy dữ liệu",
+    "Download_File": "Tải file",
+    "pdfOnly": "Chỉ có tệp tin PDF là hợp lệ",
+    "Initializing": "Đang chuẩn bị..."
+  },
+
+  "button": {
+    "info": "Thông tin",
+    "create": "Tạo",
+    "add": "Thêm",
+    "modify": "Chỉnh sửa",
+    "update": "Cập nhật",
+    "edit": "Sửa",
+    "search": "Tìm kiếm",
+    "reset": "Cài lại",
+    "delete": "Xóa",
+    "reuse": "Khôi phục",
+    "close": "Đóng",
+    "save": "Lưu",
+    "copy": "Sao chép",
+    "print": "In",
+    "scan": "Quét Mã",
+    "cancel": "Hủy",
+    "download": "Tải xuống",
+    "split": "Tách",
+    "upload": "Tải lên",
+    "receive": "Nhận",
+    "excel": "Excel",
+    "check": "Kiểm tra",
+    "findbin": "Tìm bin",
+    "view": "Hiển thị chi tiết",
+    "permission": "Quyền hạn"
+  },
+
+  "dialog": {
+    "title": {
+      "create": "Thêm {object} mới",
+      "modify": "Sửa thông tin {object}",
+      "warning": "Cảnh báo"
+    }
+  },
+
+  "login": {
+    "account_password_invalid": "Tài khoản/Mật khẩu không hợp lệ",
+    "account_blocked": "Tài khoản đã bị khóa",
+    "userName_required": "Tài khoản không được để trống",
+    "userPassword_required": "Mật khẩu không đươc để trống",
+    "lost_authorization": "Token hết hạn. Vui lòng đăng nhập lại để tiếp tục phiên làm việc"
+  },
+
+  "token": {
+    "access_token": {
+      "invalid": "Access token không hợp lệ. Đăng nhập lại để tiếp tục phiên làm việc",
+      "expired": "Access token đã hết hạn. Đăng nhập lại để tiếp tục phiên làm việc",
+      "not_expired": "Access token chưa hết hạn"
+    },
+    "refresh_token": {
+      "invalid": "Refresh token không hợp lệ. Đăng nhập lại để tiếp tục phiên làm việc",
+      "expired": "Refresh token đã hết hạn. Đăng nhập lại để tiếp tục phiên làm việc",
+      "not_expired": "Refresh token chưa hết hạn"
+    }
+  },
+
+  "menu": {
+    "standard": {
+      "default": "Danh mục",
+      "configuration": {
+        "default": "Cài đặt",
+        "menu": "Đường dẫn",
+        "role": "Vai trò",
+        "user": "Tài khoản",
+        "common": "Thông tin tổng hợp",
+        "document": "Tài liệu hướng dẫn",
+        "app": "Ứng dụng"
+      },
+      "information": {
+        "default": "Thông tin",
+        "q2policy": "Quy  tắc/Giá trị Q2",
+        "machine": "Thiết bị"
+      }
+    },
+    "edi": {
+      "default": "EDI",
+      "q1management": "Quản lý Q1",
+      "q2management": "Quản lý Q2",
+      "log": "Lịch sử EDI"
+    }
+  },
+
+  "menuPermission": {
+    "standard": {
+      "configuration": {
+        "menu": {
+          "view": "Xem - Tìm kiếm Menu",
+          "create": "Tạo Menu mới",
+          "modify": "Chỉnh sửa Menu",
+          "delete": "Xóa bỏ Menu",
+          "set_permission": "Tạo mới - Chỉnh sửa - Xóa bỏ các quyền trong Menu"
+        },
+        "common": {
+          "commonmaster": {
+            "view": "Xem - Tìm kiếm CommonMaster",
+            "create": "Tạo CommonMaster mới",
+            "modify": "Chỉnh sửa CommonMaster",
+            "delete": "Xóa bỏ CommonMaster"
+          },
+          "commondetail": {
+            "view": "Xem - Tìm kiếm CommonDetail",
+            "create": "Tạo CommonDetail mới",
+            "modify": "Chỉnh sửa CommonDetail",
+            "delete": "Xóa bỏ CommonDetail"
+          }
+        },
+        "user": {
+          "view": "Xem - Tìm kiếm người dùng",
+          "create": "Tạo người dùng mới",
+          "modify": "Chỉnh sửa thông tin người dùng",
+          "delete": "Xóa bỏ người dùng",
+          "change_pass": "Thay đổi mật khẩu của người dùng"
+        },
+        "role": {
+          "view": "Xem - Tìm kiếm vai trò người dùng",
+          "create": "Tạo vai trò mới",
+          "modify": "Chỉnh sửa thông tin vai trò người dùng",
+          "delete": "Xóa bỏ vai trò người dùng",
+          "set_menu": "Chỉnh sửa - Xóa bỏ các đường dẫn mà người dùng có thể truy cập",
+          "set_permission": "Chỉnh sửa - Xóa bỏ các hành động mà người dùng có thể làm trong 1 trang cụ thể"
+        },
+        "document": {
+          "view": "Xem - Tìm kiếm Document",
+          "create": "Tạo Document mới",
+          "modify": "Chỉnh sửa Document",
+          "delete": "Xóa bỏ Document"
+        }
+      },
+      "information": {
+        "q2policy": {
+          "view": "Xem - Tìm kiếm Q2 Policies",
+          "create": "Tạo mới Q2 Policies",
+          "modify": "Chỉnh sửa Q2 Policies",
+          "delete": "Xóa bỏ Q2 Policies"
+        },
+        "machine": {
+          "view": "Xem - Tìm kiếm Machine",
+          "create": "Tạo mới Machine",
+          "modify": "Chỉnh sửa Machine",
+          "delete": "Xóa bỏ Machine"
+        }
+      }
+    },
+    "edi": {
+      "q1management": {
+        "view": "Xem - Tìm kiếm Q1 Management",
+        "create": "Tạo mới Q1 Management",
+        "modify": "Chỉnh sửa Q1 Management",
+        "delete": "Xóa bỏ Q1 Management"
+      },
+      "q2management": {
+        "view": "Read - Search Q2 Management"
+      }
+    }
+  },
+
+  "model": {
+    "default": "Phân loại",
+    "commonMaster": {
+      "field": {
+        "commonMasterName": "Phân loại"
+      },
+      "error_message": {
+        "not_found": "Phân loại: không tồn tại",
+        "duplicated_name": "Phân loại: tên đã được tạo",
+        "commonMasterName_required": "Phân loại: tên không được để trống",
+        "commonDetail_existed": "Chi tiết có tồn tại, vui lòng xóa trước"
+      }
+    },
+
+    "commonDetail": {
+      "default": "Chi tiết",
+      "field": {
+        "commonDetailName": "Chi tiết"
+      },
+      "error_message": {
+        "not_found": "Chi tiết: không tồn tại",
+        "duplicated_name": "Chi tiết: tên đã được tạo",
+        "commonDetailName_required": "Chi tiết: tên không được để trống",
+        "master_not_found": "Phân loại: không tồn tại"
+      }
+    },
+
+    "role": {
+      "default": "Vai trò",
+      "field": {
+        "roleName": "Vai trò",
+        "roleDescription": "Gải thích"
+      },
+      "error_message": {
+        "not_found": "Role: không tồn tại",
+        "duplicated_name": "Role: tên đã được tạo",
+        "essential_role_not_delete": "Vai trò này không thể bị xóa",
+        "roleName_required": "Vai trò không được để trống"
+      }
+    },
+
+    "user": {
+      "default": "Tài khoản",
+      "field": {
+        "userName": "Tài khoản",
+        "fullName": "Họ tên",
+        "userPassword": "Mật khẩu",
+        "newPassword": "Mật khẩu mới",
+        "roleName": "Vai trò",
+        "confirmPassword": "Confirm Password"
+      },
+      "error_message": {
+        "not_found": "Tài khoản: không tồn tại",
+        "existed": "Tài khoản: đã được tạo",
+        "password_invalid": "Tài khoản: mật khẩu không hợp lệ",
+        "userName_required": "Tài khoản không được để trống",
+        "fullName_required": "Tên người dùng không được để trống",
+        "userPassword_required": "Mật khẩu không được để trống",
+        "newPassword_required": "Mật khẩu mới không được để trống",
+        "confirmPassword_required": "Mật khẩu nhập lại không được để trống",
+        "confirmPassword_notmatch": "Mật khẩu nhập lại không đúng"
+      }
+    },
+
+    "menu": {
+      "default": "Đường dẫn",
+      "field": {
+        "menuName": "Đường dẫn",
+        "menuLevel": "Cấp",
+        "sortOrder": "Thứ tự",
+        "menuIcon": "Biểu tượng",
+        "languageKey": "Đa ngôn ngữ",
+        "menuComponent": "Thành phần",
+        "navigateUrl": "Đường dẫn",
+        "parentMenuName": "Đường dẫn cha"
+      },
+      "error_message": {
+        "menuName_required": "Tên Menu không được để trống",
+        "navigateUrl_required": "Đường dẫn không được để trống",
+        "menuComponent_required": "Component không được để trống",
+        "duplicated_component": "Component đã tồn tại",
+        "duplicated_navigateUrl": "Url đã tồn tại",
+        "parent_not_found": "Menu cha không tồn tại",
+        "parentId_required": "Menu cha không được để trống"
+      }
+    },
+
+    "menuPermission": {
+      "default": "Quyền",
+      "field": {
+        "MP_Name": "Quyền",
+        "MP_Description": "Giải thích",
+        "photo": "Hình ảnh",
+        "forRoot": "ROOT Only"
+      },
+      "error_message": {}
+    },
+
+    "document": {
+      "default": "Tài liệu hướng dẫn",
+      "field": {
+        "menuName": "Đường dẫn",
+        "menuComponent": "Thành phần",
+        "documentLanguage": "Ngôn ngữ",
+        "urlFile": "Đường dẫn File"
+      },
+      "error_message": {
+        "FileNotFound": "không tìm thấy file"
+      }
+    },
+
+    "q1management": {
+      "default": "PPORTAL_QUAL01_INFO",
+      "field": {
+        "itemCode": "Item code",
+        "sendType": "Send Type",
+        "ctqNo": "CTQ No"
+      },
+      "error_message": {}
+    },
+
+    "q2management": {
+      "default": "PPORTAL_QUAL02_INFO",
+      "field": {
+        "itemCode": "Item code",
+        "sendType": "Send Type",
+        "ctqNo": "CTQ No"
+      },
+      "error_message": {}
+    },
+
+    "machine": {
+      "default": "Máy",
+      "field": { "machineCode": "Mã máy", "machineName": "Tên máy" }
+    }
+  }
+}

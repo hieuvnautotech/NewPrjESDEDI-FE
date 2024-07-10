@@ -47,6 +47,7 @@
     "@mui/x-data-grid": "^5.12.2",
     "@mui/x-data-grid-pro": "^5.17.9",
     "@mui/x-date-pickers": "^5.0.2",
+    "@mui/x-license-pro": "^6.10.2",
     "@mui/x-tree-view": "^6.17.0",
     "@preact/signals-react": "^2.0.0",
     "@tanem/react-nprogress": "^5.0.6",

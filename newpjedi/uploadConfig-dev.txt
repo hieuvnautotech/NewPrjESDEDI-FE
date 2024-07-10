@@ -1,0 +1,9 @@
+option echo off                       
+option batch on                       
+option confirm off                
+open ftp://nam:123@118.69.130.73:21 -passive=off
+cd "/"
+rm *                     
+lcd "publish"                          
+put -nopermissions -nopreservetime * 
+exit 

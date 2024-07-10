@@ -1,0 +1,347 @@
+{
+  "general": {
+    "signin": "Sign In",
+    "select_language": "Select language",
+    "warning": "Warning",
+    "create": "Create",
+    "modify": "Modify",
+    "print": "Print",
+    "changepassword": "Change password",
+    "success": "Success",
+    "no_data": "No data",
+    "account_is_logged_in_some_where": "Your account is logged in some where",
+    "roles_had_been_changed": "Your role has been changed. Please log in again to continue the session",
+    "object_invalid": "Invalid object",
+    "change_password_not_allowed": "Not allowed to change this user's password",
+    "refresh_required": "Data has modified, refresh page to get the latest",
+    "confirm_create": "Confirm to create",
+    "confirm_modify": "Confirm to modify",
+    "confirm_delete": "Confirm to delete",
+    "rootOnly": "Root only",
+    "forApp": "Show on App",
+    "unauthorized": "You have not permission to make this request",
+    "field_required": "This field cannot be blank",
+    "field_min": "Value must be greater than or equal {min}",
+    "field_max": "Value must be less than or equal {max}",
+    "confirm_redo_deleted": "Confirm to redo deleted",
+    "createdName": "User Created",
+    "createdDate": "Create Date",
+    "modifiedName": "User Updated",
+    "modifiedDate": "Update Date",
+    "duplicated_code": "Duplicated code",
+    "duplicated_name": "Duplicated name",
+    "data_actived": "Actived data",
+    "data_deleted": "Deleted data",
+    "week_invalid": "Week must be integer and between 1 - 52",
+    "year_invalid": "Year must be integer and between 2022 - 2050",
+    "datetime_format_invalid": "Date format is invalid",
+    "qty_notEnough": "Quantity is not enough",
+    "excel_error": "Excel file error: [{error}]",
+    "field_max_length": "The maximum maximum length is {length} characters",
+    "date_search_is_not_valid": "From Date must be less or equal than To Date",
+    "modified_date": "Modified Date",
+    "created_date": "Created Date",
+    "choose_printer": "Choose a printer",
+    "not_select_printer": "You have not selected a printer",
+    "not_select_file": "'You have not selected a file update",
+    "cannot_connect_printer": "Cannot connect printer",
+    "not_found": "Data not found",
+    "scanned": "Scanned",
+    "Download_File": "Download file",
+    "pdfOnly": "Only PDF file accepted",
+    "Initializing": "Initializing..."
+  },
+
+  "button": {
+    "info": "Info",
+    "create": "Create",
+    "add": "Add",
+    "modify": "Modify",
+    "update": "Update",
+    "edit": "Edit",
+    "search": "Search",
+    "reset": "Reset",
+    "delete": "Delete",
+    "reuse": "Re-use",
+    "close": "Close",
+    "save": "Save",
+    "copy": "Copy",
+    "print": "Print",
+    "scan": "Scan",
+    "cancel": "cancel",
+    "download": "download",
+    "split": "Split",
+    "upload": "upload",
+    "receive": "Receive",
+    "check": "Check",
+    "findbin": "Find bin",
+    "view": "View detail",
+    "permission": "Permission"
+  },
+
+  "dialog": {
+    "title": {
+      "create": "Create {object}",
+      "modify": "Modify {object}",
+      "warning": "Warning"
+    }
+  },
+
+  "login": {
+    "account_password_invalid": "Account/Password is invalid",
+    "account_blocked": "Account is blocked",
+    "userName_required": "Username is required",
+    "userPassword_required": "Password is required",
+    "lost_authorization": "You lost your authoriation. Please login to continue"
+  },
+
+  "token": {
+    "access_token": {
+      "invalid": "Access token is not valid. Please login to continue",
+      "expired": "Access token is expired. Please login to continue",
+      "not_expired": "Access token is not expired"
+    },
+    "refresh_token": {
+      "invalid": "Refresh token is not valid. Please login to continue",
+      "expired": "Refresh token is expired. Please login to continue",
+      "not_expired": "Refresh token is not expired"
+    }
+  },
+
+  "menu": {
+    "standard": {
+      "default": "Standard",
+      "configuration": {
+        "default": "Configuration",
+        "menu": "Link",
+        "role": "Role",
+        "user": "Account",
+        "common": "Common Info",
+        "document": "User's Manual",
+        "app": "Application"
+      },
+      "information": {
+        "default": "Information",
+        "q2policy": "Q2 Policy",
+        "machine": "Machine"
+      }
+    },
+    "edi": {
+      "default": "EDI",
+      "q1management": "Q1 Management",
+      "q2management": "Q2 Management",
+      "log": "Log"
+    }
+  },
+
+  "menuPermission": {
+    "standard": {
+      "configuration": {
+        "menu": {
+          "view": "View - Search Menu",
+          "create": "Create Menu",
+          "modify": "Modify Menu",
+          "delete": "Delete Menu",
+          "set_permission": "Create - Modify - Delete Menu Permissions"
+        },
+        "common": {
+          "commonmaster": {
+            "view": "View - Search CommonMaster",
+            "create": "Create CommonMaster",
+            "modify": "Modify CommonMaster",
+            "delete": "Delete CommonMaster"
+          },
+          "commondetail": {
+            "view": "View - Search CommonDetail",
+            "create": "Create CommonDetail",
+            "modify": "Modify CommonDetail",
+            "delete": "Delete CommonDetail"
+          }
+        },
+        "user": {
+          "view": "View - Search User",
+          "create": "Create User",
+          "modify": "Modify User",
+          "delete": "Delete User",
+          "change_pass": "Change User's password"
+        },
+        "role": {
+          "view": "View - Search Role",
+          "create": "Create Role",
+          "modify": "Modify Role",
+          "delete": "Delete Role",
+          "set_menu": "Modify - Delete role's menu",
+          "set_permission": "Modify - Delete role's permissions"
+        },
+        "document": {
+          "view": "View - Search Document",
+          "create": "Create Document",
+          "modify": "Modify Document",
+          "delete": "Delete Document"
+        }
+      },
+      "information": {
+        "q2policy": {
+          "view": "Read - Search Q2 Policies",
+          "create": "Create Q2 Policies",
+          "modify": "Modify Q2 Policies",
+          "delete": "Delete Q2 Policies"
+        },
+        "machine": {
+          "view": "Read - Search Machine",
+          "create": "Create Machine",
+          "modify": "Modify Machine",
+          "delete": "Delete Machine"
+        }
+      }
+    },
+    "edi": {
+      "q1management": {
+        "view": "Read - Search Q1 Management",
+        "create": "Create Q1 Management",
+        "modify": "Modify Q1 Management",
+        "delete": "Delete Q1 Management"
+      },
+      "q2management": {
+        "view": "Read - Search Q2 Management"
+      }
+    }
+  },
+
+  "model": {
+    "commonMaster": {
+      "default": "Category",
+      "field": {
+        "commonMasterName": "Category"
+      },
+      "error_message": {
+        "not_found": "Category: not found/existed",
+        "duplicated_name": "Category: duplicated name",
+        "commonMasterName_required": "Category: name cannot be blank",
+        "commonDetail_existed": "Detail is existed. Please delete detail first"
+      }
+    },
+
+    "commonDetail": {
+      "default": "Detail",
+      "field": {
+        "commonDetailName": "Detail"
+      },
+      "error_message": {
+        "not_found": "Detail: not found/existed",
+        "duplicated_name": "Detail: duplicated name",
+        "commonDetailName_required": "Detail: name cannot be blank",
+        "master_not_found": "Master: not found"
+      }
+    },
+
+    "role": {
+      "default": "Role",
+      "field": {
+        "roleName": "Role Name",
+        "roleDescription": "Description"
+      },
+      "error_message": {
+        "not_found": "Role: not found/existed",
+        "duplicated_name": "Role: duplicated name",
+        "roleName_required": "Role name is required",
+        "essential_role_not_delete": "Essential role, cannot be deleted"
+      }
+    },
+
+    "user": {
+      "default": "User",
+      "field": {
+        "userName": "Username",
+        "fullName": "Full name",
+        "userPassword": "Password",
+        "newPassword": "New Password",
+        "roleName": "Role",
+        "confirmPassword": "Confirm Password"
+      },
+      "error_message": {
+        "not_found": "User: not found",
+        "existed": "User: existed",
+        "password_invalid": "User: invalid password",
+        "userName_required": "User name is required",
+        "fullName_required": "Full name is required",
+        "userPassword_required": "Password is required",
+        "newPassword_required": "New Password is required",
+        "confirmPassword_required": "Confirm Password is required",
+        "confirmPassword_notmatch": "Your passwords do not match"
+      }
+    },
+
+    "menu": {
+      "default": "Menu",
+      "field": {
+        "menuName": "Menu",
+        "menuLevel": "Level",
+        "sortOrder": "Order",
+        "menuIcon": "Icon",
+        "languageKey": "Multi language",
+        "menuComponent": "Component",
+        "navigateUrl": "Access link",
+        "parentMenuName": "Parent"
+      },
+      "error_message": {
+        "menuName_required": "Menu name is required",
+        "navigateUrl_required": "Url is required",
+        "menuComponent_required": "Component is required",
+        "duplicated_component": "Component is existed",
+        "duplicated_navigateUrl": "Url is existed",
+        "parent_not_found": "Parent: not found/existed",
+        "parentId_required": "Parent: cannot be blank"
+      }
+    },
+
+    "menuPermission": {
+      "default": "Menu Permissin",
+      "field": {
+        "MP_Name": "Permission",
+        "MP_Description": "Description",
+        "photo": "Hình ảnh",
+        "forRoot": "ROOT Only"
+      },
+      "error_message": {}
+    },
+
+    "document": {
+      "default": "Document",
+      "field": {
+        "menuName": "Menu",
+        "menuComponent": "Component",
+        "documentLanguage": "Language",
+        "urlFile": "URL"
+      },
+      "error_message": {
+        "FileNotFound": "File not found"
+      }
+    },
+
+    "q1management": {
+      "default": "PPORTAL_QUAL01_INFO",
+      "field": {
+        "itemCode": "Item code",
+        "sendType": "Send Type",
+        "ctqNo": "CTQ No"
+      },
+      "error_message": {}
+    },
+
+    "q2management": {
+      "default": "PPORTAL_QUAL02_INFO",
+      "field": {
+        "itemCode": "Item code",
+        "sendType": "Send Type",
+        "ctqNo": "CTQ No"
+      },
+      "error_message": {}
+    },
+
+    "machine": {
+      "default": "Machine",
+      "field": { "machineCode": "Machine Code", "machineName": "Machine Name" }
+    }
+  }
+}
